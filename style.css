@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav > p {
+   padding: 0 10px;
+   font-size: 13px;
+   color: white;
+}
+.App {
+  font-family: Poppins;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.hero-section {
+  background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url( https://assets.codepen.io/6060109/agency-hero-image.png);
+  background-size: cover; 
+  height: 300px; 
+  color: white;
+  position: relative; 
+}
+
+.hero-section > h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+}
+
+.services-section {
+  height: 500px;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.services-section > h2 {
+  color: #133588;
+  margin: 0 0 20px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.service-block {
+  width: 25%;
+  margin: 0 10px;
+
+}
+
+.service-block img {
+  width: 70%;
+}
+
+.service-block p {
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  color: #806c6c;
+}
+
+.footer-section {
+  height: 250px;
+  background: #133588;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.footer-section h2 {
+  color: white; 
+  width: 50%;
+  margin: auto;
+}
+
+input[type="text"]::placeholder {
+  color: white;
+  text-align: center;
+}
+
+input[type="text"] {
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+  width: 20%;
+  padding: 15px 0;
+  display: block;
+  margin: 20px auto;
+
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+.services-section {
+  height: auto;
+}
+
+.services-section > div {
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.service-block {
+  width: 70%;
+  padding: 20px 0;
+}
+  
+}
